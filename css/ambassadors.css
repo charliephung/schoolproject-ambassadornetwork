@@ -1,0 +1,15 @@
+.ambassadors__card {
+	background: white;
+	box-shadow: 0rem 0rem .1rem rgba(0, 0, 0, .2);
+	width: 80%;
+	margin: 0 auto;
+}
+
+.ambassadors__card img {
+	padding-bottom: 1rem;
+	width: 100%;
+}
+
+.ambassadors__card p {
+	padding: .2rem 0;
+}

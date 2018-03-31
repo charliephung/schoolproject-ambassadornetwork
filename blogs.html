@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+<head>
+	<title>News and Events</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+	<style>
+		@-ms-viewport {
+			width: 100vw;
+			min-zoom: 100%;
+			zoom: 100%;
+		}
+
+		@viewport {
+			width: 100vw;
+			min-zoom: 100%;
+			zoom: 100%;
+		}
+
+		@-ms-viewport {
+			user-zoom: fixed;
+			min-zoom: 100%;
+		}
+
+		@viewport {
+			user-zoom: fixed;
+			min-zoom: 100%;
+		}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+</head>
+
+<body>
+
+	<div class="navbutton">
+		<input type="checkbox" class="navbutton__checkbox" id="navi-toggle">
+		<label for="navi-toggle" class="navbutton__button">
+			<span class="navbutton__icon"></span>
+		</label>
+
+		<div class="navbutton__background">&nbsp;</div>
+		<div class="navbutton__nav">
+			<ul class="navbutton__list">
+				<li class="navbutton__item">
+					<a href="#" class="navbutton__link">Home</a>
+				</li>
+				<li class="navbutton__item">
+					<a href="#" class="navbutton__link">About</a>
+				</li>
+				<li class="navbutton__item">
+					<a href="#" class="navbutton__link">Ambassador</a>
+				</li>
+				<li class="navbutton__item">
+					<a href="#" class="navbutton__link">News and Events</a>
+				</li>
+				<li class="navbutton__item">
+					<a href="#" class="navbutton__link">Materials</a>
+				</li>
+				<li class="navbutton__item">
+					<a href="#" class="navbutton__link">Blog</a>
+				</li>
+				<li class="navbutton__item">
+					<a href="#" class="navbutton__link">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<header>
+		<div class="logo">
+			<img src="img/logo.png" alt="Ambas logo" class="logo-img">
+		</div>
+	</header>
+
+	<section class="page">
+		<div class="row">
+			<div class="col span-3-of-4">
+				<div class="row" id="article__main">
+					<div id="head">
+						<h1>Blog</h1>
+					</div>
+					<h2>The Ambassador Network Blog </h2>
+					<div class="row">
+						<div id="article">
+						</div>
+					</div>
+
+					<div id="article__sub">
+						<!-- Other posts -->
+					</div>
+
+				</div>
+			</div>
+			<div class="col span-1-of-4">
+				<div id="section-news" class="section-news">
+					<p>
+						<b id="news__heading">
+						</b>
+					</p>
+					<ul id="news__content" class="section-news__list">
+					</ul>
+					<p id="news__footer">
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- Animation -->
+		<div id="sk-circle">
+			<div class="sk-circle">
+				<div class="sk-circle1 sk-child"></div>
+				<div class="sk-circle2 sk-child"></div>
+				<div class="sk-circle3 sk-child"></div>
+				<div class="sk-circle4 sk-child"></div>
+				<div class="sk-circle5 sk-child"></div>
+				<div class="sk-circle6 sk-child"></div>
+				<div class="sk-circle7 sk-child"></div>
+				<div class="sk-circle8 sk-child"></div>
+				<div class="sk-circle9 sk-child"></div>
+				<div class="sk-circle10 sk-child"></div>
+				<div class="sk-circle11 sk-child"></div>
+				<div class="sk-circle12 sk-child"></div>
+			</div>
+		</div>
+
+	</section>
+	<div id="popup">
+		<div id="popup__window">
+			<span id="popup__close">X</span>
+			<div id="popup__heading"></div>
+			<div id="popup__content">
+				<!-- post content -->
+			</div>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		let config = {
+			apiKey: "AIzaSyA_wCL_N-G9W3VV81AsfkSS8NJQ1OFYX4A",
+			authDomain: "alien-house-196714.firebaseapp.com",
+			databaseURL: "https://alien-house-196714.firebaseio.com",
+			projectId: "alien-house-196714",
+			storageBucket: "alien-house-196714.appspot.com",
+			messagingSenderId: "507970914126"
+		};
+		firebase.initializeApp(config);
+	</script>
+
+
+	<script src="js/popup.js"></script>
+	<script src="js/blogs.js"></script>
+	<script src="js/events.js"></script>
+</body>
+
+</html>
